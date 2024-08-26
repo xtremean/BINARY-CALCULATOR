@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="btn clear" onclick="clearDisplay()">C</button>
+            <button class="btn digit" onclick="appendToDisplay('0')">0</button>
+            <button class="btn digit" onclick="appendToDisplay('1')">1</button>
+            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
+            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
+            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
+            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
+            <button class="btn equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
